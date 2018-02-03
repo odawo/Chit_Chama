@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/relativelayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Chama"
+        android:layout_marginTop="20dp"
+        android:textColor="#0f2a3c"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="chama name"
+        android:textColorHint="#0f2a3c"
+        android:layout_marginTop="100dp"
+        android:padding="16dp"/>
+
+    <Spinner
+        android:id="@+id/type"
+        android:layout_below="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0f2a3c"
+        android:padding="17dp"/>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type"
+        android:hint="dd/mm/yy"
+        android:textColorHint="#0f2a3c"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/interestrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:hint="interest rate"
+        android:textColorHint="#0f2a3c"
+        android:padding="16dp"/>
+
+
+    <!--<Button-->
+        <!--android:id="@+id/save"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="save"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:layout_below="@id/date"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:background="#0f2a3c"-->
+        <!--android:padding="16dp"/>-->
+
+</RelativeLayout>

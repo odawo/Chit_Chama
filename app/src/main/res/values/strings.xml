@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyChama</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_notifications">notifications</string>
+
+    <string name="search_hint">Search for Chama</string>
+    <string name="search_view">Search</string>
+    <!--<string name="app_label"> Search Feature</string>-->
+    <string-array name="array_chamas_from_strings_change_later" />
+</resources>

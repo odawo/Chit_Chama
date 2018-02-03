@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.vanessa.mychama.Login">
+
+    <TextView
+        android:id="@+id/signinlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#0f2a3c"
+        android:padding="15dp"/>
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:hint="username"
+        android:textColorHint="#0f2a3c"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textColorHint="#0f2a3c"
+        android:inputType="textPassword"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_below="@id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:textColor="#0f2a3c"
+        android:padding="15dp"
+        android:clickable="true"/>
+
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_below="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0f2a3c"
+        android:layout_marginTop="100dp"
+        android:text="log in"
+        android:textColor="@android:color/white"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/signuplabel"
+        android:layout_below="@id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign Up."
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#0f2a3c"
+        android:padding="15dp"
+        android:clickable="true"/>
+
+</RelativeLayout>

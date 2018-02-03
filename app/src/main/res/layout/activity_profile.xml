@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.vanessa.mychama.Profile">
+
+    <RelativeLayout
+        android:id="@+id/layoutrelative"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#0f2a3c">
+
+        <ImageView
+            android:id="@+id/profpic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/profname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prof name"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/profpic"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/profname"
+            android:layout_toRightOf="@id/profpic"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mygroups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutrelative"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:text="my groups(grp name | mycontr) "
+        android:textColor="#0f2a3c"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/mybalances"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mygroups"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:text="my balances (grp name | contr) "
+        android:textColor="#0f2a3c"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/etc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mybalances"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:text="other options"
+        android:textColor="#0f2a3c"
+        android:clickable="true"/>
+
+
+</RelativeLayout>

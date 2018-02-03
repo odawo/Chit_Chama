@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Loan Application"
+        android:textSize="20sp"
+        android:textColor="#0f2a3c"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:hint="amount"
+        android:textColorHint="#0f2a3c"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount"
+        android:hint="dd/mm/yy"
+        android:textColorHint="#0f2a3c"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:hint="reason"
+        android:textColorHint="#0f2a3c"
+        android:padding="20dp"
+        android:shadowColor="#0f2a3c"/>
+
+    <TextView
+        android:id="@+id/interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interest :       "
+        android:textSize="20sp"
+        android:textColor="#0f2a3c"
+        android:layout_below="@id/reason"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_below="@id/reason"
+        android:layout_toRightOf="@id/interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rate"
+        android:textSize="20sp"
+        android:textColor="#0f2a3c"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/expectedreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expected :       "
+        android:textSize="20sp"
+        android:textColor="#0f2a3c"
+        android:layout_below="@id/interest"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/returncash"
+        android:layout_below="@id/rate"
+        android:layout_toRightOf="@id/expectedreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="return "
+        android:textSize="20sp"
+        android:textColor="#0f2a3c"
+        android:padding="20dp"/>
+
+
+</RelativeLayout>

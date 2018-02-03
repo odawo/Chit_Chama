@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.vanessa.mychama.Register">
+
+    <TextView
+        android:id="@+id/signuplabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#0f2a3c"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_below="@id/signuplabel"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:hint="first name"
+        android:padding="15dp"
+        android:textColorHint="#0f2a3c"/>
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/signuplabel"
+        android:hint="last name"
+        android:padding="15dp"
+        android:textColorHint="#0f2a3c" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstname"
+        android:padding="15dp"
+        android:hint="contact"
+        android:textColorHint="#0f2a3c"
+        android:inputType="phone"/>
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_below="@id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:textColorHint="#0f2a3c"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textColorHint="#0f2a3c"
+        android:inputType="textPassword"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_below="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0f2a3c"
+        android:layout_marginTop="60dp"
+        android:text="register"
+        android:textColor="@android:color/white"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/signinlabel"
+        android:layout_below="@id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign In."
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#0f2a3c"
+        android:padding="15dp"
+        android:clickable="true"/>
+
+</RelativeLayout>

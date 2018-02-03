@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vanessa.mychama">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".MyChamas" />
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyChamas"
+            android:launchMode="singleTop"
+            android:label="My Chamas">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <!-- <category android:name="android.intent.category.VOICE"/> -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Accounts" android:label="Accounts"/>
+        <activity android:name=".Loans" android:label="Loans"/>
+        <activity android:name=".LoanRequests" android:label="Loan Requests"/>
+        <activity android:name=".Profile" android:label="Profile"/>
+    </application>
+
+</manifest>
