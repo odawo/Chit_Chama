@@ -105,26 +105,6 @@ public class Home extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-//        int id = item.getItemId();
-//
-//        if (id == R.id.nav_mychamas) {
-//            startActivity(new Intent(Home.this, MyChamas.class));
-//        } else if (id == R.id.nav_accounts) {
-//            startActivity(new Intent(Home.this, Accounts.class));
-//        } else if (id == R.id.nav_loans) {
-//            startActivity(new Intent(Home.this, Accounts.class));
-//        } else if (id == R.id.nav_Records) {
-//
-//        } else if (id == R.id.nav_Profile) {
-//            startActivity(new Intent(Home.this, Accounts.class));
-//        } else if (id == R.id.nav_feedback) {
-//
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_logout) {
-//
-//        }
-
         switch (item.getItemId()) {
             case R.id.nav_mychamas:
                 startActivity(new Intent(Home.this, Home.class));
@@ -151,7 +131,8 @@ public class Home extends AppCompatActivity
 //                logout code
 //                startActivity(new Intent(Home.this, Accounts.class));
                 break;
-
+            case R.id.default_activity_button:
+                return true;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
